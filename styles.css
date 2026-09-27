@@ -1,0 +1,244 @@
+:root {
+    --myWhite: #fff2e8;
+    --myBeige: #f2bd99;
+    --mySalmon: #ce6857;
+    --myOrange: #d67747;
+    --myGreen: #475227;
+    --myBrown: #523e27;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;           
+}
+
+form {
+    display: grid;
+    gap: 1rem;                
+    width: 100%;              
+}
+
+h1 {
+    text-decoration:none;
+    font-size: 40pt;
+}
+
+header{
+    background-color: #f2bd99;
+    width: 95vw;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+html {
+    background-color: var(--myGreen);
+}
+
+
+html, body {
+    font-family: 'Nunito', system-ui, sans-serif;
+}
+
+input[type=text],
+input[type=password],
+input[type=submit] {
+    width: 100%;              
+    height: 40px;
+    box-sizing: border-box; 
+    border-radius: 5px;  
+}
+
+
+
+label   {
+    font-size: 14pt;
+    background-color: var(--myBeige);
+    padding: 2px;
+    width: fit-content ;
+    border-radius: 5px;
+    
+}
+
+
+/*---------------ids-------------------*/
+
+#map {
+    width: 80vw;
+    height: 55vh;
+    border-radius: 25px;
+}
+
+
+#navBar {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-bottom: 2vh;
+    background-color: var(--mySalmon);
+    border-radius: 10px;
+    width: 95vw;
+}
+
+#navBar a {
+    font: bold 6pt;
+    color: var(--myGreen);
+    padding: 2vw 1vh;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#navBar a:hover {
+    background-color: var(--myBeige);
+}
+
+#signUp {
+    background-color: var(--myBeige);
+    width: 20vw;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+
+
+/*---------------classes----------------*/
+
+.button-group {
+    display: inline-flex;
+    gap: 3vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+
+}
+
+.btn {
+    height: 30vh;
+    width: 30vw;
+    background-color: var(--myOrange);
+}
+
+.btnLrg {
+    height: 30vh;
+    width: 95vw;
+    background-color: var(--mySalmon);
+}
+
+.btnThin {
+    margin-top:1vh;
+    height: 5vh;
+    width: 95vw;
+    background-color: var(--myBeige);
+}
+
+.btn, .btnThin, .btnLrg {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #444;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+
+.btn:hover, .btnLrg:hover, .btnThin:hover {
+    background: var(--myWhite);
+}
+
+.btn:active, .btnLrg:active, .btnThin:active {
+    background: #d0d0d0;
+}
+
+.image-box {
+    width: 80vw;
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.loginDiv {
+    display: grid;
+    place-items: center;      
+    
+    height: 60vh;
+    width: 95vw;
+
+    background-color: #d67747;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+
+
+.map-div {
+    width: 95vw;
+    height: 75vh;
+    place-items: center;
+    background-color: var(--myOrange);
+    border-radius: 25px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+.recipe-container a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.recipe {
+    width: 80vw;
+    min-height: 30vh;
+    background-color: var(--mySalmon);
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 5vw;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.recipe-image {
+    height: 25%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    object-position: center;
+}
+
+.recipe-text {
+    height: 50%;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+} 
+
+.site-header {
+    width: 100%;
+    background-color: var(--myBeige);
+    padding: 2px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 2vh;
+}
