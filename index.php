@@ -42,7 +42,7 @@ if(!isset($_SESSION['ID'])){
     </div>
 
     <footer>
-        <p>The footer</p>
+        <button class="btnThin">My Pledges</button>
     </footer>
 
 

@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="styles.css">
 
 
-    <script>
-
-    </script>
-
 <header class="site-header">
     <h1>FeedAFriend</h1>
+    <p>Your virtual community garden</p>
 </header>  
 
     <div id="navBar">

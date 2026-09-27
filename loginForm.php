@@ -1,7 +1,7 @@
 <?php
 include "start.php";
 if(isset($_SESSION["ID"])){
-    header("location: index.html");
+    header("location: index.php");
     exit();
 }
 ?>

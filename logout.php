@@ -7,11 +7,10 @@ session_destroy();
 session_write_close();
 
 ?>
-<a href="index.php" style="text-decoration=none;">
     <?php 
     include 'header.php';
     ?>
-</a>
-
-<p>You have successfully logged out<br>
-<a href="loginForm.php"><button>Log In</a></p>
+<div class="loginDiv">
+    <p>You have successfully logged out<br>
+    <a href="loginForm.php"><button class="btnMini">Log In</button></a></p>
+</div>

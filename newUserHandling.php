@@ -16,7 +16,6 @@ if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
     exit("Invalid Email");
 }
 
-echo "SELECT email From Users Where email = $email";
 
 $result = $conn->query("SELECT email From User Where email = '$email'");
 $result2 = $conn->query("SELECT username From User Where username = '$username'");

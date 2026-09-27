@@ -32,11 +32,13 @@ h1 {
     font-size: 40pt;
 }
 
+
 header{
     background-color: #f2bd99;
     width: 95vw;
     border-radius: 25px;
     text-align: center;
+    margin-bottom: 2vh;
 }
 
 
@@ -115,11 +117,21 @@ label   {
 
 .button-group {
     display: inline-flex;
-    gap: 3vw;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
+    gap: 2vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
 
 }
+
+.btn, .btnThin, .btnLrg, .btnMini {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #444;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
 
 .btn {
     height: 30vh;
@@ -128,25 +140,22 @@ label   {
 }
 
 .btnLrg {
-    height: 30vh;
+    height: 20vh;
     width: 95vw;
+    background-color: var(--mySalmon);
+    margin-bottom: 1vh;
+}
+
+.btnMini {
+    height: 5vh;
+    width: 15vw;
     background-color: var(--mySalmon);
 }
 
 .btnThin {
-    margin-top:1vh;
     height: 5vh;
     width: 95vw;
     background-color: var(--myBeige);
-}
-
-.btn, .btnThin, .btnLrg {
-    padding: 0.6rem 1.2rem;
-    border: 1px solid #444;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.2s;
 }
 
 
@@ -157,6 +166,64 @@ label   {
 .btn:active, .btnLrg:active, .btnThin:active {
     background: #d0d0d0;
 }
+
+.forum-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+}
+
+.forum-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.forum-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    object-position: center;
+}
+
+.forum-post {
+    width: 80vw;
+    height: 40vh;
+    background-color: var(--myBeige);
+    border-radius: 12px;
+    padding: 5vw;
+    display:grid;
+    margin-top:2vh;
+    grid-template-rows: 5vh 5vh 20vh 10vh;
+    grid-template-columns: 2fr 1fr;
+    gap: 2vh;
+}
+
+.garden-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+.garden {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    min-height: 30vh;
+    background-color: var(--myBeige);
+    gap: 2vw;
+    padding: 5vw;
+    border-radius: 12px;
+    align-items: left;
+}
+
+.gardenh3 {
+    margin: 2px 0px 2px 0px;
+}
+
 
 .image-box {
     width: 80vw;
@@ -178,14 +245,35 @@ label   {
     padding: 25px;
 }
 
-
-
 .map-div {
     width: 95vw;
     height: 75vh;
     place-items: center;
     background-color: var(--myOrange);
     border-radius: 25px;
+}
+
+
+.pledgeh1 {
+    font-size: 28pt;
+    background-color: var(--mySalmon);
+    width: 95vw;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.postDiv {
+    display: grid;
+    place-items: center;      
+    
+    height: 95vh;
+    width: 95vw;
+
+    background-color: #d67747;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 25px;
 }
 
 .recipe-container {
@@ -234,6 +322,63 @@ label   {
     color: black;
 } 
 
+.row1-1, .row1-2 {
+    display: flex;
+    align-items: center;
+}
+
+.row1-1   {
+    grid-column: 1;
+}
+
+.row1-2 img {
+    width: 10vh;
+    height:10vh;
+    border-radius: 50%;
+    object-fit:cover;
+    overflow: hidden;
+    margin-top: 4vh;
+}
+
+.row1-2 {
+    grid-column: 2;
+    justify-content: right;
+}
+
+.row1-2 {
+    margin: 0;
+    padding: 0;
+}
+
+.row2 {
+    grid-column: 1/3;
+}
+
+.row3-1 {
+    grid-column: 1;
+}
+
+.row3-2 {
+    grid-column: 2;
+}
+
+.row3   {
+    grid-column: 1/3;
+}
+
+.signupDiv {
+    display: grid;
+    place-items: center;      
+    
+    min-height: 60vh;
+    width: 95vw;
+
+    background-color: #d67747;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 25px;
+}
+
 .site-header {
     width: 100%;
     background-color: var(--myBeige);
@@ -242,3 +387,4 @@ label   {
     text-align: center;
     margin-bottom: 2vh;
 }
+

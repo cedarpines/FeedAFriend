@@ -17,13 +17,23 @@ if (smallButtons.length > 0) {
     });
 }
 
-// Login button
-const loginBtn = document.querySelector('.btnThin');
-if (loginBtn) {
-    loginBtn.addEventListener('click', () => {
-        window.location.href = 'loginForm.php';
+// Login button and My pledges
+const thinButtons = document.querySelectorAll('.btnThin');
+if (thinButtons.length > 0){
+    thinButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const label = button.textContent.trim();
+
+            if (label === 'Login') {
+                window.location.href = 'loginForm.php';
+            } else if (label === 'My Pledges') {
+                window.location.href = 'pledgeList.php';
+            }
+        });
     });
-}
+};
+
+
 // Food Map button
 const foodMapBtn = document.querySelector('.btnLrg');
 if (foodMapBtn) {

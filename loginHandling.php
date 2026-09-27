@@ -7,29 +7,29 @@ $password = htmlspecialchars($_POST['password']);
 if(filter_var($emailUsername, FILTER_VALIDATE_EMAIL)){
     $result = $conn->query("SELECT * From USER WHERE email = '$emailUsername'");
     if($results->num_rows <1){
-        header("loginForm.php?Invalid");
+        header("location: loginForm.php?Invalid");
         exit("Invalid Email/Username");
     }elseif($results->num_rows >1){
-        header("loginForm.php?Invalid");
+        header("location: loginForm.php?Invalid");
         exit("Unknown error");
     }
     $info = $result->fetch_assoc();
     if($password != $info["pass"]){
-        header("loginForm.php?Invalid");
+        header("location: loginForm.php?Invalid");
         exit("Invalid Password");
     }
 }else{
     $result = $conn->query("SELECT * From USER WHERE username = '$emailUsername'");
     if($result->num_rows <1){
-        header("loginForm.php?Invalid=true");
+        header("location: loginForm.php?Invalid=true");
         exit("Invalid Email/Username");
     }elseif($result->num_rows >1){
-        header("loginForm.php?Invalid=true");
+        header("location: loginForm.php?Invalid=true");
         exit("Unknown error");
     }
     $info = $result->fetch_assoc();
     if($password != $info["pass"]){
-        header("loginForm.php?Invalid=true");
+        header("location: loginForm.php?Invalid=true");
         exit("Invalid Password");
     }
 }

@@ -1,7 +1,7 @@
 <?php
 include "start.php";
 if(isset($_SESSION["ID"])){
-    header("index.php");
+    header("location: index.php");
     exit();
 }
 ?>
@@ -27,6 +27,7 @@ if(isset($_SESSION["ID"])){
             echo '<p style="color:red;">Passwords must match</p><br>';
         }
 ?>
+    <div class="signupDiv">
         <form action = "newUserHandling.php" method="post">
             <label for="firstName">First Name</label>
             <input id="firstName" type="text" required name="firstName">
@@ -36,9 +37,9 @@ if(isset($_SESSION["ID"])){
             <br>
             <p>Type of user</p>
             <div>
-                <input type="radio" id="farmer" required name="typeUser">
+                <input type="radio" id="farmer" value="farmer" required name="typeUser">
                 <label for="farmer">Farmer</label>
-                <input type="radio" id="Non farmer" required name="typeUser">
+                <input type="radio" id="Non farmer" value="Non farmer" required name="typeUser">
                 <label for="Non farmer">Non farmer</label> 
             </div>
             <br>
@@ -56,7 +57,8 @@ if(isset($_SESSION["ID"])){
             <br>
             <input type="submit" value="Submit">
         </form>
+    </div>
 
-    </body>"
+    </body>
 
 </html>
